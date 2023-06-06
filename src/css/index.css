@@ -12,6 +12,7 @@ header {
     align-items: center;
     width: 100vw;
     height: 15vh;
+    padding-top: 1rem;
     /* background-color: tomato; */
 }
 
@@ -35,19 +36,22 @@ a:hover {
     box-shadow: 10px 10px 161px 58px rgba(255,255,255,1);
     background-color: #fff6;
     color: #000;
+    cursor: pointer;
     
 }
 
 .container {
     display: flex;
     width: 100vw;
+    margin-top: 2rem;
     justify-content: center;
+    
     
 }
 
 .container-title {
     display: flex;
-    /* background: yellowgreen; */
+    background: yellowgreen;
     width: 30vw;
     justify-content: center;
     align-items: center;
@@ -57,12 +61,13 @@ a:hover {
 
 .container-img {
     display: flex;
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
     width: 50vw;
     justify-content: center;
+    align-items: center;
 }
 
 img {
-    width: 40vw;
+    width: 35vw;
     
 }
