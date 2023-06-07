@@ -1,125 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 body {
     max-width: 1200px;
-    background: linear-gradient(264deg, rgba(0,0,0,1) 9%, rgba(37,143,153,1) 50%, rgba(0,0,0,1) 93%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    
+    margin: 0 auto;
 }
 
+/* Header */
 header {
+    background-color: #000;
+    padding: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 15vh;
-    padding-top: 1rem;
-    /* background-color: tomato; */
+    justify-content: space-around;
 }
 
-header nav ul{
-    display: flex;
-    
-    width: 60vw;
-    gap: 2rem;
-    justify-content: center;
+header h1 {
+    color: #dc3545;
+    font-size: 2.5rem;
 }
 
-li a{
+header span {
     color: #fff;
-    font-size: 1.1rem;
-    padding: 5px;
-    border-radius: 35px;
-    
 }
 
-a:hover {
-    box-shadow: 10px 10px 161px 58px rgba(255,255,255,1);
-    background-color: #fff6;
-    color: #000;
-    cursor: pointer;
-    
-}
-
-.container {
+header .navegacao-primaria ul {
+    display: flex;
+    gap: 10px;
     align-items: center;
-    /* border: 1px solid beige; */
+}
+
+header .navegacao-primaria li a {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* Download CV Section */
+.section-div {
+    animation: inicializar .7s forwards;
+    background-color: #000;
     display: grid;
-    flex-direction: column;
-    margin: auto;
-    width: 70vw;
-    height: 75vh;
-    margin-top: 2rem;
-    justify-content: center;
-    
-    
-}
-
-.container-title {
-    text-align: center;
-    /* background: yellowgreen; */
-    width: 50vw;
-    height: 20vh;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
     align-items: center;
-    color: #fff;
-    margin-bottom: 3rem;
+    gap: 60px;
+    padding: 50px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap:  30px;
+}
+
+.section-div div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #f7f7f7;
     
 }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
+.section-div div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 200;
+    color: #f7f7f7;
 }
 
-h2 {
-    font-size: 1.7rem;
-    font-weight: 200;
+.section-div div a {
+    justify-self: start;
+    color: #f7f7f7;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid #fff;
 }
 
-p {
-    font-size: 1.2rem;
-    font-weight: 130;
+.section-div img {
+    max-width: 100%;
 }
 
-.container-img {
-    background-image: url("../img/WhatsApp_Image_2023-02-07_at_20.31.18-removebg-preview.png");
-    /* box-shadow: 10px 10px 161px 25px rgba(255,255,255,1); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #fff5;
-    margin: auto;
-    border-radius: 150%;
-    display: flex;
-    border: 1px solid #fff;
-    width: 13vw;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 10vw;
-    
-    
-}
-
-@media(max-width:768px) {
-    .container-img{
-        width: 50vw;
-        height: 30vh;
-    }
-
-    .container.title{
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
 
     }
 
-    p{
-        display: none;
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
-
-    
-    
 }
